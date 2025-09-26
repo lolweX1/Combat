@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://ba26fplro25ri"]
 
-[ext_resource type="Texture2D" uid="uid://ch3mqv4fxyfpu" path="res://Upgrade_Icon.png" id="1_3tt5d"]
+[ext_resource type="Texture2D" uid="uid://ch3mqv4fxyfpu" path="res://Icons/Upgrade_Icon.png" id="1_3tt5d"]
 [ext_resource type="Script" uid="uid://dwomyqq6a8nhl" path="res://game_overlay.gd" id="1_qhju6"]
-[ext_resource type="Texture2D" uid="uid://dsidu7lnu2lcr" path="res://settings_Icon.png" id="2_yl2qe"]
+[ext_resource type="Texture2D" uid="uid://dsidu7lnu2lcr" path="res://Icons/settings_Icon.png" id="2_yl2qe"]
 [ext_resource type="Texture2D" uid="uid://drfaobbs0uc8j" path="res://Upgrade_levels/lv1.png" id="3_8kb1r"]
 
 [node name="Game_overlay" type="CanvasLayer"]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbext1wjs348l"
-path="res://.godot/imported/Cliffs.blend-daca2d8e97979aff05a1ad9a2fc296eb.scn"
+uid="uid://lpwkiq5jhamh"
+path="res://.godot/imported/Ground_default.blend-1eacbc30d5d96db82dd4a94e83aa62a9.scn"
 
 [deps]
 
-source_file="res://Cliffs.blend"
-dest_files=["res://.godot/imported/Cliffs.blend-daca2d8e97979aff05a1ad9a2fc296eb.scn"]
+source_file="res://Enviornment_models/Ground_default.blend"
+dest_files=["res://.godot/imported/Ground_default.blend-1eacbc30d5d96db82dd4a94e83aa62a9.scn"]
 
 [params]
 

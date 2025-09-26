@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://lfnxqhqoogk8"]
 
 [ext_resource type="Script" uid="uid://ca115c3nl7ywj" path="res://player.gd" id="1_kpjcp"]
-[ext_resource type="PackedScene" uid="uid://t18uo84hbqt0" path="res://player_default.blend" id="2_kne1u"]
+[ext_resource type="PackedScene" uid="uid://t18uo84hbqt0" path="res://Character_models/player_default.blend" id="2_kne1u"]
 [ext_resource type="PackedScene" uid="uid://ba26fplro25ri" path="res://Game_overlay.tscn" id="3_kne1u"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e80uo"]
