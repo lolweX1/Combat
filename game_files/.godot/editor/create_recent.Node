@@ -1,0 +1,15 @@
+StaticBody3D
+Label      - Matches the "text" keyword.
+Control
+HSlider
+ColorRect
+Button
+TextureRect
+GridContainer
+Label
+Container
+CanvasLayer
+CollisionShape3D
+TextEdit
+Camera2D
+AnimatedSprite3D

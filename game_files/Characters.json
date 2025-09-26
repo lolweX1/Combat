@@ -1,0 +1,12 @@
+{
+	"characters": {
+		"default": {
+			"skills": ["dash", "fireball", "tremor"],
+			"health": 500,
+			"blend": "player_default.blend",
+			"animations": [
+				["attack", "left_arm_movement"]
+			]
+		}
+	}
+}

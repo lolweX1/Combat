@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://mu1ipug7pxot"]
+
+[ext_resource type="Script" uid="uid://dloufsdfqti4x" path="res://splash_screen.gd" id="1_08c3s"]
+
+[node name="Splash_screen" type="Node2D"]
+script = ExtResource("1_08c3s")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -580.0
+offset_top = -322.0
+offset_right = 578.0
+offset_bottom = 327.0
+
+[node name="Player_btn" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 322.0
+offset_right = 588.0
+offset_bottom = 330.0
+text = "Play"
+
+[node name="Name" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.492
+offset_bottom = -0.30801392
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 51
+text = "INSANITY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="Control/Player_btn" to="." method="_on_player_btn_pressed"]

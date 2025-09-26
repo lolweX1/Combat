@@ -1,0 +1,479 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba26fplro25ri"]
+
+[ext_resource type="Texture2D" uid="uid://ch3mqv4fxyfpu" path="res://Upgrade_Icon.png" id="1_3tt5d"]
+[ext_resource type="Script" uid="uid://dwomyqq6a8nhl" path="res://game_overlay.gd" id="1_qhju6"]
+[ext_resource type="Texture2D" uid="uid://dsidu7lnu2lcr" path="res://settings_Icon.png" id="2_yl2qe"]
+[ext_resource type="Texture2D" uid="uid://drfaobbs0uc8j" path="res://Upgrade_levels/lv1.png" id="3_8kb1r"]
+
+[node name="Game_overlay" type="CanvasLayer"]
+script = ExtResource("1_qhju6")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="settings" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1064.0
+offset_top = 24.0
+offset_right = -16.0
+offset_bottom = -552.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_yl2qe")
+
+[node name="upgrades" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1047.0
+offset_top = 552.0
+offset_right = -33.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+icon = ExtResource("1_3tt5d")
+
+[node name="Upgrade_screen" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="ColorRect" parent="Control/Upgrade_screen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 172.0
+offset_top = 78.0
+offset_right = -156.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+
+[node name="Damage_section" type="Control" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 61.0
+offset_right = -432.0
+offset_bottom = -261.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="add" type="Button" parent="Control/Upgrade_screen/bg/Damage_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 313.0
+offset_top = 36.0
+offset_right = -48.5
+offset_bottom = -84.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Upgrade_screen/bg/Damage_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 47.0
+offset_top = 25.0
+offset_right = -96.0
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8kb1r")
+
+[node name="type" type="Label" parent="Control/Upgrade_screen/bg/Damage_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 142.0
+offset_top = 100.0
+offset_right = -168.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Damage"
+
+[node name="Acceleration_section" type="Control" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 200.0
+offset_right = -409.0
+offset_bottom = -127.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="add" type="Button" parent="Control/Upgrade_screen/bg/Acceleration_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 316.0
+offset_top = 34.0
+offset_right = -67.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Upgrade_screen/bg/Acceleration_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 23.0
+offset_right = -116.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8kb1r")
+
+[node name="type" type="Label" parent="Control/Upgrade_screen/bg/Acceleration_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 109.0
+offset_top = 93.0
+offset_right = -202.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Acceleration"
+
+[node name="Defense_section" type="Control" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 352.0
+offset_right = -395.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="add" type="Button" parent="Control/Upgrade_screen/bg/Defense_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 317.0
+offset_top = 24.0
+offset_right = -77.5
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Upgrade_screen/bg/Defense_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 44.0
+offset_top = 12.0
+offset_right = -130.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8kb1r")
+
+[node name="type" type="Label" parent="Control/Upgrade_screen/bg/Defense_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 166.0
+offset_top = 74.0
+offset_right = -187.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Defense"
+
+[node name="Control_section" type="Control" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 443.0
+offset_top = 72.0
+offset_right = -48.0
+offset_bottom = -299.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="add" type="Button" parent="Control/Upgrade_screen/bg/Control_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 279.0
+offset_top = 20.0
+offset_right = -25.5
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Upgrade_screen/bg/Control_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = -77.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8kb1r")
+
+[node name="type" type="Label" parent="Control/Upgrade_screen/bg/Control_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 102.0
+offset_top = 76.0
+offset_right = -161.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Control"
+
+[node name="AtkSpeed_section" type="Control" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 420.0
+offset_top = 207.0
+offset_right = -25.0
+offset_bottom = -145.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="add" type="Button" parent="Control/Upgrade_screen/bg/AtkSpeed_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 289.0
+offset_top = 13.0
+offset_right = -51.5
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Upgrade_screen/bg/AtkSpeed_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 37.0
+offset_top = 7.0
+offset_right = -102.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8kb1r")
+
+[node name="type" type="Label" parent="Control/Upgrade_screen/bg/AtkSpeed_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 96.0
+offset_top = 66.0
+offset_right = -174.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Attack Speed"
+
+[node name="Critical_section" type="Control" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 411.0
+offset_top = 344.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="add" type="Button" parent="Control/Upgrade_screen/bg/Critical_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 305.0
+offset_top = 24.0
+offset_right = -70.0
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+action_mode = 0
+text = "+"
+
+[node name="TextureRect" type="TextureRect" parent="Control/Upgrade_screen/bg/Critical_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = 11.5
+offset_right = -128.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8kb1r")
+
+[node name="type" type="Label" parent="Control/Upgrade_screen/bg/Critical_section"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 140.0
+offset_top = 78.0
+offset_right = -225.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Critical"
+
+[node name="Exit" type="Button" parent="Control/Upgrade_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 772.0
+offset_bottom = -425.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "X"
+
+[node name="Settings_screen" type="Control" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="ColorRect" parent="Control/Settings_screen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 85.0
+offset_top = 73.0
+offset_right = -105.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.641934, 0.641934, 0.641934, 1)
+
+[node name="Sensitivity" type="Control" parent="Control/Settings_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 2.0
+offset_bottom = -351.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="Label" parent="Control/Settings_screen/bg/Sensitivity"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = 91.0
+offset_right = -703.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Horizontal Mouse Sensitivity"
+
+[node name="Value" type="Label" parent="Control/Settings_screen/bg/Sensitivity"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 428.0
+offset_top = 52.0
+offset_right = -483.0
+offset_bottom = -61.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "X.X"
+
+[node name="HSlider" type="HSlider" parent="Control/Settings_screen/bg/Sensitivity"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 60.0
+offset_right = -548.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+tick_count = 1
+
+[node name="Exit" type="Button" parent="Control/Settings_screen/bg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 858.0
+offset_top = 23.0
+offset_right = -45.0
+offset_bottom = -413.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "X"
+
+[connection signal="pressed" from="Control/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/upgrades" to="." method="_on_upgrades_pressed"]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/Damage_section/add" to="." method="_on_add_pressed" binds= [0]]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/Acceleration_section/add" to="." method="_on_add_pressed" binds= [1]]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/Defense_section/add" to="." method="_on_add_pressed" binds= [2]]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/Control_section/add" to="." method="_on_add_pressed" binds= [3]]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/AtkSpeed_section/add" to="." method="_on_add_pressed" binds= [4]]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/Critical_section/add" to="." method="_on_add_pressed" binds= [5]]
+[connection signal="pressed" from="Control/Upgrade_screen/bg/Exit" to="." method="_on_exit_pressed"]
+[connection signal="value_changed" from="Control/Settings_screen/bg/Sensitivity/HSlider" to="." method="_on_h_slider_sens_value_changed"]
+[connection signal="pressed" from="Control/Settings_screen/bg/Exit" to="." method="_on_exit_pressed"]
