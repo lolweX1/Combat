@@ -1,35 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://lfnxqhqoogk8"]
+[gd_scene load_steps=4 format=3 uid="uid://lfnxqhqoogk8"]
 
 [ext_resource type="Script" uid="uid://ca115c3nl7ywj" path="res://player.gd" id="1_kpjcp"]
-[ext_resource type="PackedScene" uid="uid://t18uo84hbqt0" path="res://Character_models/player_default.blend" id="2_kne1u"]
+[ext_resource type="PackedScene" uid="uid://ba1vc6k6oorhn" path="res://player_chess.tscn" id="2_kne1u"]
 [ext_resource type="PackedScene" uid="uid://ba26fplro25ri" path="res://Game_overlay.tscn" id="3_kne1u"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_e80uo"]
-size = Vector3(1.0696373, 2.2221184, 1)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_kpjcp")
 
-[node name="BodyCollision" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.545, 0, 0, 0, 0.545, 0, 0, 0, 0.545, 0.0015185326, 0.34759605, 0)
-shape = SubResource("BoxShape3D_e80uo")
-
-[node name="player_default" parent="." instance=ExtResource("2_kne1u")]
-transform = Transform3D(0.095, 0, 0, 0, 0.095, 0, 0, 0, 0.095, 0, 0, 0)
-
-[node name="Left Arm" parent="player_default" index="5"]
-transform = Transform3D(1, 0, 0, 0, 3.1896198, -0.007138928, 0, 0.022771051, 0.9999743, 4.898161, 7.448682, 0)
-
-[node name="Sword_hilt" parent="player_default" index="6"]
-transform = Transform3D(0.54708135, 0, 0, 0, 0.5470666, -0.007572774, 0, 0.0040148636, 1.0318686, 3.9968624, 2.5338738, -2.0026393)
-
-[node name="Sword_blade" parent="player_default" index="7"]
-transform = Transform3D(0.54708135, 0, 0, 0, 0.5470666, -0.023924565, 0, 0.0040148636, 3.259969, 3.99715, 2.553678, -6.2153206)
+[node name="player" parent="." instance=ExtResource("2_kne1u")]
 
 [node name="Player_cam" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.99026805, 0.1391731, 0, -0.1391731, 0.99026805, -0.022383213, 1.4214048, 1.4866126)
-fov = 57.45997
+transform = Transform3D(1, 0, 0, 0, 0.9659259, 0.25881907, 0, -0.25881907, 0.9659258, -0.022383213, 18.16455, 22.91406)
+fov = 59.2
 
 [node name="Game_Overlay" parent="Player_cam" instance=ExtResource("3_kne1u")]
 
-[editable path="player_default"]
+[editable path="player"]

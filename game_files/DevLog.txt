@@ -33,3 +33,6 @@ Created a .json file for characters
 Next steps: be able to read json file and create
 
 https://lowpolyassets.itch.io/low-poly-chess-set/download/eyJpZCI6MTcwMTQ3OCwiZXhwaXJlcyI6MTc1ODg1NDQxNn0%3d.FzJ9ne4174RQNo7Ji8NxxyRkQLk%3d
+
+9/30/2025
+Begin creating template for attacks, ults, etc for characters. Also created a format for character combat (if I want to add modding)

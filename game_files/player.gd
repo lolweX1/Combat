@@ -33,12 +33,19 @@ const DEGREE_OF_VERTICAL_VIEW = 60; # this is how much it can go up or down
 
 const MAX_LEVEL = 10;
 
+var chara
+
 func level_change(level_name: String, increment: int) -> int:
 	levels[level_name] += increment;
 	if (levels[level_name] > MAX_LEVEL):
 		levels[level_name] = MAX_LEVEL;
 		return -1; 
 	return levels[level_name];
+	
+func _ready() -> void:
+	chara = $player/CollisionShape3D
+	$player.remove_child(chara)
+	add_child(chara)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

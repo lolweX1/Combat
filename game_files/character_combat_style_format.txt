@@ -1,0 +1,40 @@
+func get_initial_stats() -> Array: //this function is supposed to set the initial stats of the character
+	return [atk_speed, dmg, ctrl, def, crit, accel] //these are the stats you need to set the value for in order
+
+// this the numbers in the array is how much you add to the stat, not how much its multiplied by: stat = initial + level*mult
+func get_stat_lvl_mult() -> Array: //same as previous except it sets how much each stat is to be incremented by per level
+	return [atk_speed, dmg, ctrl, def, crit, accel] // these are the stats in order
+
+// there are only 3 skills, each if block should create the skill
+func skill(number: int) -> void:
+	if (number == 1):
+		pass # bishop
+	elif (number == 2):
+		pass # knight
+	elif (number == 3):
+		pass # rook
+
+func set_skill_stats(one: Array, two: Array, three: Array): //each parameter follows as [dmg, cooldown]
+	//hidden  
+//call this function
+
+// this is the ult, create the ult in this function
+func ult() -> void:
+	pass # queen
+
+// this is the basic attack, create the basic attack here
+func basic_atk() -> void:
+	pass
+
+// this is the counter,  call this function 
+func set_counter(reflect: float, stun: float) -> void:
+	//hidden
+
+//if the character does not have a weapon, use this otherwise set disable to false and give the second parameter any float value
+func set_block_mitigate(disable: boolean, percent: float) -> void:
+	//hidden
+// call this function
+
+func set_block_weapon(disable: boolean, durability_loss) -> void:
+	//hidden
+// same as previous function except for weapon characters, call this function
