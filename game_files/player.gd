@@ -67,6 +67,8 @@ func _physics_process(delta: float) -> void:
 	if (Input.is_action_just_pressed("show_mouse")):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		game_focus = false
+	if (Input.is_action_just_pressed("attack_basic")):
+		$player.basic_atk()
 	
 
 	# Get the input direction and handle the movement/deceleration.

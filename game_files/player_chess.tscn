@@ -54,3 +54,6 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0.059246346, 2.3726773e-08)
 shape = SubResource("ConvexPolygonShape3D_dhxnf")
+
+[node name="bullet_pos" type="Node3D" parent="."]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 0.12756617, 0)

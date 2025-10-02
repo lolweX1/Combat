@@ -1,19 +1,19 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759335073
+::res://::1759369856
 character_combat_style_format.txt::TextFile::-1::1759254721::0::1::::<><><>0<>0<><>::
 DevLog.txt::TextFile::-1::1759254752::0::1::::<><><>0<>0<><>::
-Environment.tscn::PackedScene::5524711467412327763::1759162561::0::1::::<><><>0<>0<><>::uid://lpwkiq5jhamh::::res://Enviornment_models/Ground_default.blend
+Environment.tscn::PackedScene::5524711467412327763::1759342049::0::1::::<><><>0<>0<><>::uid://lpwkiq5jhamh::::res://Enviornment_models/Ground_default.blend
 Game.tscn::PackedScene::3741519597691128395::1759162394::0::1::::<><><>0<>0<><>::uid://ckyhgqpgm67a2::::res://Environment.tscn<>uid://lfnxqhqoogk8::::res://Player.tscn
 game_overlay.gd::GDScript::8733090229140050965::1758857369::0::1::::<>CanvasLayer<><>0<>0<><>::
 Game_overlay.tscn::PackedScene::2444050844433307994::1759254752::0::1::::<><><>0<>0<><>::uid://ch3mqv4fxyfpu::::res://Icons/Upgrade_Icon.png<>uid://dwomyqq6a8nhl::::res://game_overlay.gd<>uid://dsidu7lnu2lcr::::res://Icons/settings_Icon.png<>uid://drfaobbs0uc8j::::res://Upgrade_levels/lv1.png
 global.gd::GDScript::2703014237255361509::1758816183::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::6048366458082279123::1758389637::1758389672::1::::<><><>0<>0<>ae8ecb6700da4dc44ced1eb425c0ca01<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main.tscn::PackedScene::4366794836554621378::1758770215::0::1::::<><><>0<>0<><>::uid://mu1ipug7pxot::::res://Splash_screen.tscn
-player.gd::GDScript::4828147553528701605::1759290306::0::1::::<>CharacterBody3D<><>0<>0<><>::
-Player.tscn::PackedScene::783230414887898013::1759291245::0::1::::<><><>0<>0<><>::uid://ca115c3nl7ywj::::res://player.gd<>uid://ba1vc6k6oorhn::::res://player_chess.tscn<>uid://ba26fplro25ri::::res://Game_overlay.tscn
+player.gd::GDScript::4828147553528701605::1759336829::0::1::::<>CharacterBody3D<><>0<>0<><>::
+Player.tscn::PackedScene::783230414887898013::1759336829::0::1::::<><><>0<>0<><>::uid://ca115c3nl7ywj::::res://player.gd<>uid://ba1vc6k6oorhn::::res://player_chess.tscn<>uid://ba26fplro25ri::::res://Game_overlay.tscn
 player_chess.gd::GDScript::2186210942567594960::1759253661::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player_chess.tscn::PackedScene::2441374778834236399::1759291351::0::1::::<><><>0<>0<><>::uid://dgoijoti364yg::::res://Low Poly Chess/Low Poly Chess/White/combat.gd
-player_chess_basic_bullet.tscn::PackedScene::7128504477551872762::1759288396::0::1::::<><><>0<>0<><>::uid://ck4jj2i2rt272::::res://Low Poly Chess/Low Poly Chess/White/Pawn.fbx
+player_chess.tscn::PackedScene::2441374778834236399::1759341769::0::1::::<><><>0<>0<><>::uid://dgoijoti364yg::::res://Low Poly Chess/Low Poly Chess/White/combat.gd
+player_chess_basic_bullet.tscn::PackedScene::7128504477551872762::1759342275::0::1::::<><><>0<>0<><>::uid://ck4jj2i2rt272::::res://Low Poly Chess/Low Poly Chess/White/Pawn.fbx
 splash_screen.gd::GDScript::7961464838783381385::1758555074::0::1::::<>Node2D<><>0<>0<><>::
 Splash_screen.tscn::PackedScene::885147425963083779::1758555074::0::1::::<><><>0<>0<><>::uid://dloufsdfqti4x::::res://splash_screen.gd
 standard_player_movement.gd::GDScript::6262687158485355700::1759155331::0::1::::<>Node<><>0<>0<><>::
@@ -41,9 +41,9 @@ Knight.fbx::PackedScene::8426976553671752475::1759154781::1759154830::1::::<><><
 Pawn.fbx::PackedScene::119224921235996854::1759154781::1759154830::1::::<><><>0<>0<>c4609e50f9dc031cad0e00e5ab5e89e7<>res://.godot/imported/Pawn.fbx-07de96148620e7d37ecec76f21dff34f.scn::
 Queen.fbx::PackedScene::1717893925490201241::1759154781::1759154830::1::::<><><>0<>0<>7020b975887404beb376d1fd79f31c53<>res://.godot/imported/Queen.fbx-02684fadcea9b5dd0382491a6698d23f.scn::
 Rook.fbx::PackedScene::2587907659997295376::1759154781::1759154830::1::::<><><>0<>0<>53b94fcd50b6ed437e859f3557e6e964<>res://.godot/imported/Rook.fbx-4c6947b60fe4b9ff342f1371424fa4af.scn::
-::res://Low Poly Chess/Low Poly Chess/White/::1759290187
+::res://Low Poly Chess/Low Poly Chess/White/::1759342678
 Bishop.fbx::PackedScene::7694956182274394788::1759154781::1759154830::1::::<><><>0<>0<>7eda9f2479aa3ef6d96ea761204d6a41<>res://.godot/imported/Bishop.fbx-c516faa948ba1ade2795c625ace18d29.scn::
-combat.gd::GDScript::7609798974631949602::1759290187::0::1::::<>Node3D<><>0<>0<><>::
+combat.gd::GDScript::7609798974631949602::1759342678::0::1::::<>Node3D<><>0<>0<><>::
 King.fbx::PackedScene::2713979380127448491::1759154781::1759155027::1::::<><><>0<>0<>871a4828c37b2c1eba05512969f894f4<>res://.godot/imported/King.fbx-14279309de130605086427523c569db0.scn::
 Knight.fbx::PackedScene::3817060315302791172::1759154781::1759154831::1::::<><><>0<>0<>e8507c17fe59af62f0febd858af651c8<>res://.godot/imported/Knight.fbx-f1700ac45cfd25cc5beae550200228c9.scn::
 Pawn.fbx::PackedScene::5535160715453444175::1759154781::1759154831::1::::<><><>0<>0<>031672f32dd1dd7f3ebb025614e0a5a5<>res://.godot/imported/Pawn.fbx-1259352ad9f8630d9486ec69ce502eb1.scn::

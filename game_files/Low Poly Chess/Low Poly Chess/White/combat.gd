@@ -2,9 +2,11 @@ extends Node3D
 
 var mesh;
 var bullet = preload("res://player_chess_basic_bullet.tscn")
+var env;
 
 func _ready() -> void:
 	mesh = $King.mesh
+	env = get_tree().get_root().get_node("Main/Game/Environment")
 
 func get_initial_stats() -> Array:
 	return [3, 15, 2, 5, 10, 7]
@@ -23,12 +25,11 @@ func skill(number: int) -> void:
 func ult() -> void:
 	pass # queen
 
-func basic_atk() -> void:
+func basic_atk() -> void: #err
 	var blt = bullet.instantiate()
-	blt.transform.origin = Vector3(0, 2, 0)
-	blt.apply_inpulse(Vector3(1, 0, 0))
-	get_parent().add_child(blt)
-	
+	blt.position = get_parent().position + Vector3(0, 0, 0)
+	env.add_child(blt)
+
 func counter() -> void:
 	pass
 	
