@@ -36,3 +36,10 @@ https://lowpolyassets.itch.io/low-poly-chess-set/download/eyJpZCI6MTcwMTQ3OCwiZX
 
 9/30/2025
 Begin creating template for attacks, ults, etc for characters. Also created a format for character combat (if I want to add modding)
+
+10/1/2025
+Taking a break on this. Realized I wasn't skilled enough just yet. 
+Notes for when I come back: 
+	- reorganize everything
+	- work on bullets for the chess king
+	- figure out multiplayer
